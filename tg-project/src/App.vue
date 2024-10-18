@@ -1,13 +1,19 @@
 <template>
+  <div id="app">
+    <Navbar />  <!-- Навигационная панель -->
+    <router-view /> <!-- Контент, который будет меняться в зависимости от маршрута -->
+  </div>
 </template>
 
-<script>
 
+<script>
+import Navbar from './components/Navbar.vue';
 export default {
-  name: 'App',
-  components: {
+  name: 'Navbar',
+  components:
+  Navbar
   }
-}
+};
 </script>
 
 <style>
